@@ -19,7 +19,7 @@ function _omb_theme_PROMPT_COMMAND(){
   PS1="\n${_omb_prompt_bold_gray}[${_omb_prompt_navy}\@${_omb_prompt_bold_gray}]-"
   PS1+="${_omb_prompt_bold_gray}[${_omb_prompt_green}\u${_omb_prompt_olive}@${_omb_prompt_green}\h${_omb_prompt_bold_gray}]-"
   PS1+="${_omb_prompt_bold_gray}[${_omb_prompt_purple}\w${_omb_prompt_bold_gray}]-${python_venv}"
-  PS1+="$(scm_prompt_info)${_omb_prompt_reset_color}\$ "
+  PS1+="$(scm_prompt_info)${_omb_prompt_normal}\$ "
 }
 
 _omb_util_add_prompt_command _omb_theme_PROMPT_COMMAND
